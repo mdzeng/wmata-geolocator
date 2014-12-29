@@ -1,0 +1,4 @@
+.idea/
+.node-version
+node_modules/
+npm-debug.log
