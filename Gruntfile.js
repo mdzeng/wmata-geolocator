@@ -6,19 +6,19 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		browserify: {
-			options: {
-				alias: [
-					'./views/components/home.jsx:Home',
-					'react:react'
-				],
-				transform: [require('grunt-react').browserify],
-				browserifyOptions: {
-					debug: true
-				}
-			},
 			client: {
 				src: ['views/components/**/*.jsx'],
-				dest: 'public/js/built_components.js'
+				dest: 'public/js/built_components.js',
+				options: {
+					alias: [
+						'./views/components/home.jsx:Home',
+						'react:react'
+					],
+					transform: [require('grunt-react').browserify],
+					browserifyOptions: {
+						debug: true
+					}
+				}
 			}
 		},
 
