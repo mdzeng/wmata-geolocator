@@ -1,27 +1,32 @@
 {
-	"name": "application-name",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-	"start": "grunt run"
-	},
-	"dependencies": {
-		"config": "^1.7.0",
-		"cors": "^2.5.1",
-		"express": "3.4.8",
-		"express-hbs": "^0.7.11",
-		"jade": "*",
-		"react": "^0.12.0",
-		"request": "^2.36.0"
-	},
-	"devDependencies": {
-		"grunt": "^0.4.5",
-		"grunt-cli": "^0.1.13",
-		"grunt-react": "^0.10.0",
-		"grunt-browserify": "^1.2.0",
-		"grunt-concurrent": "^1.0.0",
-		"grunt-contrib-watch": "^0.6.1",
-		"grunt-nodemon": "^0.3.0",
-		"open": "0.0.5"
-	}
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "grunt run"
+  },
+  "dependencies": {
+    "config": "^1.7.0",
+    "cors": "^2.5.1",
+    "express": "3.4.8",
+    "express-hbs": "^0.7.11",
+    "jade": "*",
+    "react": "^0.12.0",
+    "request": "^2.36.0",
+    "ipware": "0.0.3",
+    "geoip-lite": "^1.1.5",
+    "superagent": "^0.21.0",
+    "lodash": "^3.2.0",
+    "bluebird": "^2.9.9"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-react": "^0.10.0",
+    "grunt-browserify": "^1.2.0",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.3.0",
+    "open": "0.0.5"
+  }
 }
