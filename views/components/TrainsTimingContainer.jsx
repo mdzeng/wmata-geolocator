@@ -31,7 +31,6 @@ module.exports = React.createClass({
 	},
 
 	retrieveNextTrains: function(stationCode) {
-		console.log("what is the station code" + stationCode);
 		if (typeof stationCode !== 'undefined') {
 			request.get('/nextTrains')
 				.query({stationCode: stationCode})
@@ -45,19 +44,23 @@ module.exports = React.createClass({
 
 	render: function() {
 		return (
-			<div className="next-trains-info">
-			Next trains:
-				<div>
+			<div>
+				<p className="next-trains">Next Trains</p>
+				<ul class="list-group" >
+
 				{
 					_.map(this.state.trainTimings, function(trainTime) {
 						return (
-							<div>
-								<p>{trainTime.DestinationName}: {trainTime.Min}</p>
-							</div>
+							  <li className="list-group-item">
+								  <p className="lead dests">
+									  <span id="destName">{trainTime.DestinationName}</span>
+									  <span className="pull-right" id="destTime">{trainTime.Min}</span>
+								  </p>
+							  </li>
 						)
 					})
 				}
-				</div>
+				</ul>
 			</div>
 		);
 	}

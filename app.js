@@ -46,7 +46,7 @@ app.get('/closestMetro', function(req, res) {
 		qs: {
 			Lat: req.query.lat,
 			Lon: req.query.lon,
-			Radius: 500,
+			Radius: 50000,
 			api_key: 'g5mpvg4gcbmr3pcnvr9sc4ey'
 		}
 	};
@@ -64,7 +64,6 @@ app.get('/closestMetro', function(req, res) {
 
 		request(options)
 		.then(function(station) {
-			//res.send(station);
 			var stationName = JSON.parse(station[0].body).Name;
 			res.send({name: stationName, stationCode: stationCode});
 		});

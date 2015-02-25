@@ -45,7 +45,7 @@ module.exports = React.createClass({
 
 	renderNoMetro: function() {
 		return (
-			<div>
+			<div className="metro-header">
 			{
 				this.state.searchFinished ?	<p>Sorry, no nearby metro</p>
 				: <p>Searching for nearby metro stations...</p>
@@ -56,8 +56,11 @@ module.exports = React.createClass({
 
 	render: function() {
 		return (
-			<div className="home">
-				{this.state.closestMetro ? <div><p>Your Closest Metro Is: {this.state.closestMetro}</p></div>
+			<div className="container-fluid">
+				{this.state.closestMetro ?
+					<div className="metro-header">
+						<p>{this.state.closestMetro}</p>
+					</div>
 					:  this.renderNoMetro()
 				}
 				<NextTrain stationCode={this.state.stationCode}/>
