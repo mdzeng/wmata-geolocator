@@ -1,0 +1,37 @@
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', verdana, arial, helvetica, sans-serif;
+}
+
+ul {
+	margin-left: -40px;
+}
+
+.metro-header {
+	width: 100%;
+	font-size: 36px;
+	text-align: center;
+	margin: auto;
+	height: 75px;
+	line-height: 75px;
+	background-color: #3D4553;
+	color: #ffffff;
+}
+
+.next-trains {
+	font-size: 16px;
+	text-align: center;
+	margin: auto;
+	height: 45px;
+	line-height: 45px;
+	color: #535353;
+	border-color: #535353;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+
+.list-group-item {
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+}
+
